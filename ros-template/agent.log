@@ -1,0 +1,401 @@
+==> Entrypoint
+Network configured successfully.
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+Forcing ROS_MASTER_URI=http://localhost:11311
+<== Entrypoint
+roscore/master is not yet running, will wait for it to start
+... logging to /root/.ros/log/b33d589a-22ca-11ec-9653-0242ac110002/roslaunch-fdd262bf2da7-107.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+roscore/master is not yet running, will wait for it to start
+roscore/master is not yet running, will wait for it to start
+[1mstarted roslaunch server http://172.17.0.2:39985/[0m
+ros_comm version 1.15.11
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.11
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [122][0m
+[1mROS_MASTER_URI=http://172.17.0.2:11311/[0m
+]2;roscore http://172.17.0.2:11311/
+[1msetting /run_id to b33d589a-22ca-11ec-9653-0242ac110002[0m
+master has started, initiating launch
+master has started, initiating launch
+master has started, initiating launch
+... logging to /root/.ros/log/b33d589a-22ca-11ec-9653-0242ac110002/roslaunch-fdd262bf2da7-108.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/submission_ws/src/agent/launch/agent_node.launch
+[1mprocess[rosout-1]: started with pid [139][0m
+started core service [/rosout]
+... logging to /root/.ros/log/b33d589a-22ca-11ec-9653-0242ac110002/roslaunch-fdd262bf2da7-110.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch
+... logging to /root/.ros/log/b33d589a-22ca-11ec-9653-0242ac110002/roslaunch-fdd262bf2da7-109.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch
+[1mstarted roslaunch server http://172.17.0.2:41409/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /gru/car_cmd_switch_node/mappings/ARRIVE_AT_STOP_LINE: stop
+ * /gru/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /gru/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /gru/car_cmd_switch_node/mappings/CALIBRATING: calib
+ * /gru/car_cmd_switch_node/mappings/CALIBRATING_CALC: calib_calc
+ * /gru/car_cmd_switch_node/mappings/CHARGING_FIRST_IN_LINE: stop
+ * /gru/car_cmd_switch_node/mappings/DEEP_LANE_FOLLOWING: deep_learning
+ * /gru/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /gru/car_cmd_switch_node/mappings/INTERSECTION_COORDINATION: stop
+ * /gru/car_cmd_switch_node/mappings/INTERSECTION_PLANNING: stop
+ * /gru/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /gru/car_cmd_switch_node/mappings/IN_CHARGING_AREA: vehicle
+ * /gru/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /gru/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /gru/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /gru/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /gru/car_cmd_switch_node/mappings/NORMAL_JOYSTICK_CONTROL: joystick
+ * /gru/car_cmd_switch_node/mappings/OBSTACLE_ALERT: lane
+ * /gru/car_cmd_switch_node/mappings/OBSTACLE_STOP: stop
+ * /gru/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /gru/car_cmd_switch_node/mappings/PARKING: parking
+ * /gru/car_cmd_switch_node/mappings/SAFE_JOYSTICK_CONTROL: parallel_autonomy
+ * /gru/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /gru/car_cmd_switch_node/source_topics/calib: auto_calibration_...
+ * /gru/car_cmd_switch_node/source_topics/calib_calc: auto_calibration_...
+ * /gru/car_cmd_switch_node/source_topics/coordination: coordinator_node/...
+ * /gru/car_cmd_switch_node/source_topics/deep_learning: duckiebot_il_lane...
+ * /gru/car_cmd_switch_node/source_topics/intersection: lane_controller_n...
+ * /gru/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /gru/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /gru/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /gru/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /gru/car_cmd_switch_node/source_topics/parking: lane_controller_n...
+ * /gru/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /gru/car_cmd_switch_node/source_topics/stop: simple_stop_contr...
+ * /gru/joy_mapper_node/bicycle_kinematics: 0
+ * /gru/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /gru/joy_mapper_node/speed_gain: 0.41
+ * /gru/joy_mapper_node/steer_gain: 8.3
+ * /gru/kinematics_node/baseline: 0.1
+ * /gru/kinematics_node/gain: 1.0
+ * /gru/kinematics_node/k: 27.0
+ * /gru/kinematics_node/limit: 1.0
+ * /gru/kinematics_node/omega_max: 8.0
+ * /gru/kinematics_node/radius: 0.0318
+ * /gru/kinematics_node/trim: 0.0
+ * /gru/kinematics_node/v_max: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.15.11
+
+NODES
+  /gru/
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    kinematics_node (dagu_car/kinematics_node.py)
+    velocity_to_pose_node (dagu_car/velocity_to_pose_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch http://localhost:11311
+[1mstarted roslaunch server http://172.17.0.2:36025/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.11
+
+NODES
+  /
+    agent_node (agent/solution.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/submission_ws/src/agent/launch/agent_node.launch http://localhost:11311
+[1mprocess[agent_node-1]: started with pid [170][0m
+[1mprocess[gru/joy_mapper_node-1]: started with pid [171][0m
+[1mprocess[gru/kinematics_node-2]: started with pid [172][0m
+[1mprocess[gru/velocity_to_pose_node-3]: started with pid [173][0m
+[1mprocess[gru/car_cmd_switch_node-4]: started with pid [174][0m
+[1mstarted roslaunch server http://172.17.0.2:40589/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /gru/anti_instagram_node/color_balance_scale: 0.8
+ * /gru/anti_instagram_node/interval: 5
+ * /gru/anti_instagram_node/output_scale: 0.2
+ * /gru/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /gru/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /gru/fsm_node/events/joystick_override_off/trigger: False
+ * /gru/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /gru/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /gru/fsm_node/events/joystick_override_on/trigger: True
+ * /gru/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /gru/fsm_node/events/obstacle_cleared/topic: road_anomaly_watc...
+ * /gru/fsm_node/events/obstacle_cleared/trigger: False
+ * /gru/fsm_node/events/obstacle_exists/msg_type: BoolStamped
+ * /gru/fsm_node/events/obstacle_exists/topic: road_anomaly_watc...
+ * /gru/fsm_node/events/obstacle_exists/trigger: True
+ * /gru/fsm_node/global_transitions/joystick_override_off: LANE_FOLLOWING
+ * /gru/fsm_node/global_transitions/joystick_override_on: NORMAL_JOYSTICK_C...
+ * /gru/fsm_node/initial_state: NORMAL_JOYSTICK_C...
+ * /gru/fsm_node/nodes/anti_instagram: anti_instagram_no...
+ * /gru/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /gru/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /gru/fsm_node/nodes/lane_controller_node: lane_controller_n...
+ * /gru/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /gru/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /gru/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /gru/fsm_node/nodes/vehicle_avoidance_control_node: vehicle_avoidance...
+ * /gru/fsm_node/nodes/vehicle_detection_node: vehicle_detection...
+ * /gru/fsm_node/nodes/vehicle_filter_node: vehicle_filter_no...
+ * /gru/fsm_node/states/LANE_FOLLOWING/active_nodes: ['anti_instagram'...
+ * /gru/fsm_node/states/LANE_FOLLOWING/current_status: in_progress
+ * /gru/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /gru/fsm_node/states/LANE_FOLLOWING/transitions/obstacle_exists: OBSTACLE_STOP
+ * /gru/fsm_node/states/NORMAL_JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /gru/fsm_node/states/NORMAL_JOYSTICK_CONTROL/current_status: implemented
+ * /gru/fsm_node/states/NORMAL_JOYSTICK_CONTROL/lights: ['joystick']
+ * /gru/fsm_node/states/OBSTACLE_STOP/active_nodes: ['anti_instagram'...
+ * /gru/fsm_node/states/OBSTACLE_STOP/current_status: in_progress
+ * /gru/fsm_node/states/OBSTACLE_STOP/lights: ['lane_following']
+ * /gru/fsm_node/states/OBSTACLE_STOP/transitions/obstacle_cleared: LANE_FOLLOWING
+ * /gru/ground_projection_node/board_h: 5
+ * /gru/ground_projection_node/board_w: 7
+ * /gru/ground_projection_node/square_size: 0.031
+ * /gru/ground_projection_node/x_offset: 0.191
+ * /gru/ground_projection_node/y_offset: 0.093
+ * /gru/lane_controller_node/d_offset: 0.0
+ * /gru/lane_controller_node/d_resolution: 0.011
+ * /gru/lane_controller_node/d_thres: 0.2615
+ * /gru/lane_controller_node/integral_bounds/d/bot: -0.3
+ * /gru/lane_controller_node/integral_bounds/d/top: 0.3
+ * /gru/lane_controller_node/integral_bounds/phi/bot: -1.2
+ * /gru/lane_controller_node/integral_bounds/phi/top: 1.2
+ * /gru/lane_controller_node/k_Id: -0.3
+ * /gru/lane_controller_node/k_Iphi: 0.0
+ * /gru/lane_controller_node/k_d: -6.0
+ * /gru/lane_controller_node/k_theta: -5
+ * /gru/lane_controller_node/omega_ff: 0
+ * /gru/lane_controller_node/phi_resolution: 0.051
+ * /gru/lane_controller_node/stop_line_slowdown/end: 0.15
+ * /gru/lane_controller_node/stop_line_slowdown/start: 0.6
+ * /gru/lane_controller_node/theta_thres: 0.523
+ * /gru/lane_controller_node/v_bar: 0.19
+ * /gru/lane_controller_node/verbose: 0
+ * /gru/lane_filter_node/debug: False
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/cov_v: 0.5
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/d_max: 0.3
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/d_min: -0.15
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/delta_d: 0.02
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/delta_phi: 0.1
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/lanewidth: 0.23
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/linewidth_white: 0.05
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/linewidth_yellow: 0.025
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/mean_d_0: 0
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/mean_phi_0: 0
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/min_max: 0.1
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/phi_max: 1.5
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/phi_min: -1.5
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/range_est: 0.33
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/range_max: 0.6
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/range_min: 0.2
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/sigma_d_0: 0.1
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/sigma_d_mask: 1.0
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_0: 0.1
+ * /gru/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_mask: 2.0
+ * /gru/lane_filter_node/use_propagation: True
+ * /gru/line_detector_node/colors/RED/high_1: [15, 255, 255]
+ * /gru/line_detector_node/colors/RED/high_2: [180, 255, 255]
+ * /gru/line_detector_node/colors/RED/low_1: [0, 140, 100]
+ * /gru/line_detector_node/colors/RED/low_2: [165, 140, 100]
+ * /gru/line_detector_node/colors/WHITE/high: [180, 100, 255]
+ * /gru/line_detector_node/colors/WHITE/low: [0, 0, 150]
+ * /gru/line_detector_node/colors/YELLOW/high: [45, 255, 255]
+ * /gru/line_detector_node/colors/YELLOW/low: [25, 140, 100]
+ * /gru/line_detector_node/img_size: [120, 160]
+ * /gru/line_detector_node/line_detector_parameters/canny_aperture_size: 3
+ * /gru/line_detector_node/line_detector_parameters/canny_thresholds: [80, 200]
+ * /gru/line_detector_node/line_detector_parameters/dilation_kernel_size: 3
+ * /gru/line_detector_node/line_detector_parameters/hough_max_line_gap: 1
+ * /gru/line_detector_node/line_detector_parameters/hough_min_line_length: 3
+ * /gru/line_detector_node/line_detector_parameters/hough_threshold: 2
+ * /gru/line_detector_node/top_cutoff: 40
+ * /gru/line_segment_visualizer_node/veh_name: gru
+ * /rosdistro: noetic
+ * /rosversion: 1.15.11
+
+NODES
+  /
+    gru_to_map (tf/static_transform_publisher)
+  /gru/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection_node (ground_projection/ground_projection_node.py)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (visualization_tools/lane_pose_visualizer_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    line_segment_visualizer_node (visualization_tools/line_segment_visualizer_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch http://localhost:11311
+DEBUG:commons:version: 6.1.7 *
+INFO:typing:version: 6.1.8
+DEBUG:aido_schemas:aido-protocols version 6.0.41 path /usr/local/lib/python3.8/dist-packages
+INFO:nodes:version 6.2.4 path /usr/local/lib/python3.8/dist-packages pyparsing 2.4.6
+[1mprocess[gru/fsm_node-1]: started with pid [186][0m
+[1mprocess[gru/line_detector_node-2]: started with pid [188][0m
+[1mprocess[gru/ground_projection_node-3]: started with pid [190][0m
+[1mprocess[gru/line_segment_visualizer_node-4]: started with pid [191][0m
+[1mprocess[gru_to_map-5]: started with pid [192][0m
+[1mprocess[gru/lane_filter_node-6]: started with pid [193][0m
+[1mprocess[gru/lane_controller_node-7]: started with pid [196][0m
+[1mprocess[gru/lane_pose_visualizer_node-8]: started with pid [201][0m
+[1mprocess[gru/anti_instagram_node-9]: started with pid [203][0m
+[INFO] [1633101455.659669]: [/gru/kinematics_node] Initializing...
+[INFO] [1633101455.810891]: [/gru/kinematics_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101455.858858]: [/gru/joy_mapper_node] Initializing...
+[INFO] [1633101455.972204]: [/gru/kinematics_node] Initialized with: 
+{
+    "baseline": 0.1,
+    "gain": 0.8,
+    "k": 27.0,
+    "limit": 1.0,
+    "omega_max": 8.0,
+    "radius": 0.0318,
+    "trim": 0.0,
+    "v_max": 1.0
+}
+[INFO] [1633101455.988119]: [/gru/joy_mapper_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101456.170817]: [/gru/velocity_to_pose_node] Initializing...
+[INFO] [1633101456.185480]: [/gru/car_cmd_switch_node] Initializing...
+[INFO] [1633101456.273079]: [/gru/car_cmd_switch_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101456.317284]: [/gru/velocity_to_pose_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101456.327372]: [/gru/velocity_to_pose_node] Initialized.
+[INFO] [1633101456.356631]: [/gru/car_cmd_switch_node] Initialized.
+[INFO] [1633101456.360691]: [/gru/car_cmd_switch_node] Sources:
+	- 'lane': 'lane_controller_node/car_cmd'
+	- 'intersection': 'lane_controller_node/car_cmd'
+	- 'coordination': 'coordinator_node/car_cmd'
+	- 'joystick': 'joy_mapper_node/car_cmd'
+	- 'obstacle': 'simple_stop_controller_node/car_cmd'
+	- 'parallel_autonomy': 'lane_supervisor_node/car_cmd'
+	- 'recovery': 'lane_recovery_node/car_cmd'
+	- 'deep_learning': 'duckiebot_il_lane_following/car_cmd'
+	- 'parking': 'lane_controller_node/car_cmd'
+	- 'calib': 'auto_calibration_node/car_cmd'
+	- 'calib_calc': 'auto_calibration_calculation_node/car_cmd'
+	- 'stop': 'simple_stop_controller_node/car_cmd'
+[INFO] [1633101456.679922]: [/gru/fsm_node] Initialized.
+[INFO] [1633101456.683872]: [/gru/fsm_node] FSMState: NORMAL_JOYSTICK_CONTROL
+[INFO] [1633101457.043777]: [/gru/car_cmd_switch_node] Car cmd switched to joystick in state NORMAL_JOYSTICK_CONTROL.
+[INFO] [1633101457.199363]: [/gru/anti_instagram_node] Initializing...
+[INFO] [1633101457.289242]: [/gru/anti_instagram_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101457.316610]: [/gru/anti_instagram_node] Initialized.
+[INFO] [1633101457.320753]: [/gru/lane_controller_node] Initializing...
+[INFO] [1633101457.394256]: [/gru/lane_controller_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101457.445417]: [/gru/line_segment_visualizer_node] Initializing...
+[INFO] [1633101457.457191]: [/gru/lane_pose_visualizer_node] Initializing...
+[INFO] [1633101457.513602]: [/gru/lane_controller_node] Initialized!
+[INFO] [1633101457.549451]: [/gru/lane_pose_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101457.553223]: [/gru/lane_pose_visualizer_node] Vehicle name: gru
+[INFO] [1633101457.564874]: [/gru/lane_pose_visualizer_node] Initialzed.
+[INFO] [1633101457.573012]: [/gru/line_segment_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101457.578710]: [/gru/line_segment_visualizer_node] ~veh_name = gru 
+[INFO] [1633101457.591496]: [/gru/line_segment_visualizer_node] Initialzed.
+DEBUG:commons:[35mversion: 6.1.7 *[0m
+DEBUG:commons:[35mversion: 6.1.7 *[0m
+INFO:aido_schemas:my message 1
+[32m[DEBUG] [1633101457.807710]: init_node, name[/agent_node], pid[170]
+[0m[32m[DEBUG] [1633101457.809429]: ... service URL is rosrpc://172.17.0.2:42283
+[0m[32m[DEBUG] [1633101457.810973]: [/agent_node/get_loggers]: new Service instance
+[0m[32m[DEBUG] [1633101457.813661]: ... service URL is rosrpc://172.17.0.2:42283
+[0m[32m[DEBUG] [1633101457.815089]: [/agent_node/set_logger_level]: new Service instance
+[0m[INFO] [1633101457.817665]: Just after init_node [start]
+[INFO] [1633101457.819549]: Just after init_node [end]
+DEBUG:commons:[35mversion: 6.1.7 *[0m
+INFO:typing:[32mversion: 6.1.8[0m
+INFO:conf_tools:[32mconf_tools 6.0.2[0m
+INFO:typing:[32mversion: 6.1.8[0m
+INFO:conf_tools:[32mconf_tools 6.0.2[0m
+publishing and latching message. Press ctrl-C to terminate
+[INFO] [1633101458.362058]: [/gru/car_cmd_switch_node] Car cmd switched to lane in state LANE_FOLLOWING.
+INFO:typing:[32mversion: 6.1.8[0m
+INFO:conf_tools:[32mconf_tools 6.0.2[0m
+[INFO] [1633101458.781371]: [/gru/line_detector_node] Initializing...
+[INFO] [1633101458.810707]: [/gru/ground_projection_node] Initializing...
+[INFO] [1633101458.829107]: [/gru/line_detector_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101458.860602]: [/gru/ground_projection_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101458.880061]: [/gru/lane_filter_node] Initializing...
+[INFO] [1633101458.929078]: [/gru/lane_filter_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1633101462.162462]: [/gru/ground_projection_node] First projected segments published.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/wrapper.py", line 390, in loop
+    sink.write_topic_message(rtm.topic, rtm.data, rtm.timing)
+  File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/writing.py", line 19, in write_topic_message
+    self._write_raw(m)
+  File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/writing.py", line 31, in _write_raw
+    self.of.write(j)
+BrokenPipeError: [Errno 32] Broken pipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/wrapper.py", line 273, in run_loop
+    loop(node_name, fi, fo, node, protocol, tin, tout, config=config, fi_desc=fin, fo_desc=fout)
+  File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/wrapper.py", line 408, in loop
+    raise InternalProblem(msg) from e  # XXX
+zuper_nodes.structures.InternalProblem: Exception while handling a message on topic "get_commands".
+
+| Traceback (most recent call last):
+|   File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/wrapper.py", line 390, in loop
+|     sink.write_topic_message(rtm.topic, rtm.data, rtm.timing)
+|   File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/writing.py", line 19, in write_topic_message
+|     self._write_raw(m)
+|   File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/writing.py", line 31, in _write_raw
+|     self.of.write(j)
+| BrokenPipeError: [Errno 32] Broken pipe
+| 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/code/submission_ws/src/agent/src/solution.py", line 82, in <module>
+    wrap_direct(node=node, protocol=protocol, args=[])
+  File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/interface.py", line 24, in wrap_direct
+    run_loop(node, protocol, args)
+  File "/usr/local/lib/python3.8/dist-packages/zuper_nodes_wrapper/wrapper.py", line 281, in run_loop
+    raise Exception(msg) from e
+Exception: Error in node ROSTemplateAgent
+[32m[DEBUG] [1633101512.260006]: connecting to 172.17.0.2 40879
+[0m[31m================================================================================REQUIRED process [agent_node-1] has died!
+process has died [pid 170, exit code 1, cmd /code/submission_ws/src/agent/src/solution.py __name:=agent_node __log:=/root/.ros/log/b33d589a-22ca-11ec-9653-0242ac110002/agent_node-1.log].
+log file: /root/.ros/log/b33d589a-22ca-11ec-9653-0242ac110002/agent_node-1*.log
+Initiating shutdown!
+================================================================================[0m
+[agent_node-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

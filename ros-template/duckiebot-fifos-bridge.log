@@ -1,0 +1,80 @@
+==> Entrypoint
+Network configured successfully.
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+Forcing ROS_MASTER_URI=http://192.168.1.133:11311
+<== Entrypoint
+==> Launching app...
+... logging to /root/.ros/log/8b449170-22c3-11ec-b24e-001325ae6391/roslaunch-adrian-HP-Spectre-51.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://adrian-HP-Spectre.local:38655/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.11
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.133:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.133:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [59][0m
+DEBUG:commons:version: 6.1.7 *
+INFO:typing:version: 6.1.8
+DEBUG:aido_schemas:aido-protocols version 6.0.41 path /usr/local/lib/python3.8/dist-packages
+INFO:nodes:version 6.2.4 path /usr/local/lib/python3.8/dist-packages pyparsing 2.4.6
+DEBUG:ipce:version 6.0.36 path /usr/local/lib/python3.8/dist-packages
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/ego0-out since 3 seconds.
+DEBUG:nodes_wrapper:Found /fifos/ego0-out after 3 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<== App terminated!
+==> Entrypoint
+Network configured successfully.
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+Forcing ROS_MASTER_URI=http://192.168.1.133:11311
+<== Entrypoint
+==> Launching app...
+... logging to /root/.ros/log/8b449170-22c3-11ec-b24e-001325ae6391/roslaunch-adrian-HP-Spectre-51.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://adrian-HP-Spectre.local:38655/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.11
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.133:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.133:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [59][0m
+DEBUG:commons:version: 6.1.7 *
+INFO:typing:version: 6.1.8
+DEBUG:aido_schemas:aido-protocols version 6.0.41 path /usr/local/lib/python3.8/dist-packages
+INFO:nodes:version 6.2.4 path /usr/local/lib/python3.8/dist-packages pyparsing 2.4.6
+DEBUG:ipce:version 6.0.36 path /usr/local/lib/python3.8/dist-packages
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/ego0-out since 3 seconds.
+DEBUG:nodes_wrapper:Found /fifos/ego0-out after 3 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<== App terminated!
