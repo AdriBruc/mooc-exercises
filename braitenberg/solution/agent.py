@@ -26,8 +26,8 @@ from preprocessing import preprocess
 # TODO edit this Config class ! Play with different gain and const values
 @dataclass
 class BraitenbergAgentConfig:
-    gain: float = 0.5
-    const: float = 0.1
+    gain: float = 0.4
+    const: float = 0.6
 
 
 class BraitenbergAgent:
@@ -98,6 +98,21 @@ class BraitenbergAgent:
         const = self.config.const
         pwm_left = const + ls * gain
         pwm_right = const + rs * gain
+        
+        ### new implementation
+        if l == r:
+            l = 0
+            r = 0
+        elif l > r:
+            l = 1
+            r = 0
+        else:
+            l = 0
+            r = 1
+        
+        pwm_left = const + l * gain
+        pwm_right = const + r * gain
+        ### new implementation
 
         return pwm_left, pwm_right
 
