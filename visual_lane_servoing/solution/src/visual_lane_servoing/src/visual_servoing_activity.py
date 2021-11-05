@@ -24,8 +24,8 @@ def get_steer_matrix_left_lane_markings(shape):
     quarter_x = int(shape[1]/4)
     tenth_y = int(shape[0]/10)
     steer_matrix_left_lane = np.zeros(shape)
-    steer_matrix_left_lane[6*tenth_y:, :quarter_x] = -0.5
-    steer_matrix_left_lane[3*tenth_y:, quarter_x:3*quarter_x] = -0.5
+    steer_matrix_left_lane[6*tenth_y:, :quarter_x] = -0.1
+    steer_matrix_left_lane[3*tenth_y:, quarter_x:3*quarter_x] = -0.1
     
     return steer_matrix_left_lane
 
@@ -49,8 +49,8 @@ def get_steer_matrix_right_lane_markings(shape):
     quarter_x = int(shape[1]/4)
     tenth_y = int(shape[0]/10)
     steer_matrix_right_lane = np.zeros(shape)
-    steer_matrix_right_lane[6*tenth_y:, 3*quarter_x:] = 0.5
-    steer_matrix_right_lane[3*tenth_y:, quarter_x:3*quarter_x] = 0.5
+    steer_matrix_right_lane[6*tenth_y:, 3*quarter_x:] = 0.1
+    steer_matrix_right_lane[3*tenth_y:, quarter_x:3*quarter_x] = 0.1
     
     return steer_matrix_right_lane
 
@@ -88,7 +88,7 @@ def detect_lane_markings(image):
     mask_right = np.ones(sobelx.shape)
     mask_right[:, :int(w/2)] = 0
     
-    threshold = 50
+    threshold = 15
     Gmag = np.sqrt(sobelx*sobelx + sobely*sobely)
     mask_mag = (Gmag > threshold)
     
