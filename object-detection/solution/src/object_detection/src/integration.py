@@ -6,7 +6,7 @@
 
 def DT_TOKEN():
     # todo change this to your duckietown token
-    dt_token = "dt1-3nT8KSoxVh4MguD4tsyUyCkFy1F6NthugyqasqTDWjZTcEG-43dzqWFnWd8KBa1yev1g3UKnzVxZkkTbfUmFNyzEVE79mfDU2V4ms8MpsN4gxG96Jn"
+    dt_token = "dt1-3nT8KSoxVh4MguD4tsyUyCkFy1F6NthugyqasqTDWjauad2-43dzqWFnWd8KBa1yev1g3UKnzVxZkkTbfo3HY9Ajp4Yg9ovzBQitoyjzjkDRXKkWu2"
     return dt_token
 
 def MODEL_NAME():
@@ -20,7 +20,7 @@ def MODEL_NAME():
 def NUMBER_FRAMES_SKIPPED():
     # todo change this number to drop more frames
     # (must be a positive integer)
-    return 5
+    return 3
 
 # In[3]:
 
@@ -40,7 +40,7 @@ def filter_by_scores(scor):
     # Right now, this returns True for every object's confidence
     # Change this to filter the scores, or not at all
     # (returning True for all of them might be the right thing to do!)
-    return scor >= 0.5
+    return scor>=0.5
 
 # In[5]:
 
@@ -49,6 +49,8 @@ def filter_by_scores(scor):
 # So it is of the shape (leftmost x pixel, topmost y pixel, rightmost x pixel, bottommost y pixel)
 def filter_by_bboxes(bbox):
     # Like in the other cases, return False if the bbox should not be considered.
-    x = bbox[2] - bbox[0]
-    y = bbox[3] - bbox[1]
-    return x*y >= 3200
+    min_volume = 3200
+    x_delta = bbox[2] - bbox[0]
+    y_delta = bbox[3] - bbox[1]
+    return x_delta*y_delta >= min_volume
+
