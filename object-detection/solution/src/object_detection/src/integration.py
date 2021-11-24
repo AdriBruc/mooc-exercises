@@ -6,7 +6,7 @@
 
 def DT_TOKEN():
     # todo change this to your duckietown token
-    dt_token = "dt1-3nT8KSoxVh4MguD4tsyUyCkFy1F6NthugyqasqTDWjauad2-43dzqWFnWd8KBa1yev1g3UKnzVxZkkTbfo3HY9Ajp4Yg9ovzBQitoyjzjkDRXKkWu2"
+    dt_token = "dt1-3nT8KSoxVh4MguD4tsyUyCkFy1F6NthugyqasqTDWjavFat-43dzqWFnWd8KBa1yev1g3UKnzVxZkkTbfbKfRbYWvvgddk5DQ6uuSgh2M9BGqT9E1t"
     return dt_token
 
 def MODEL_NAME():
@@ -52,5 +52,5 @@ def filter_by_bboxes(bbox):
     min_volume = 3200
     x_delta = bbox[2] - bbox[0]
     y_delta = bbox[3] - bbox[1]
-    return x_delta*y_delta >= min_volume
+    return x_delta*y_delta>=min_volume
 
